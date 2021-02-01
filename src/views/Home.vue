@@ -88,43 +88,6 @@
 </template>
 
 <style scoped>
-h1 {
-  letter-spacing: 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-
-h2 {
-  font-weight: 900;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-  font-size: 20px;
-  color: #111;
-}
-
-.h-divider {
-  min-width: 100%;
-  border-top: 3px solid #f4f4f4;
-  margin-top: 24px;
-}
-
-.floating-link {
-  font-size: 1.5rem;
-  letter-spacing: 0.6px;
-  color: #d72d87;
-  border-bottom: 3px solid #d72d87;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.floating-link:hover {
-  color: #d72d87;
-  text-decoration: none;
-}
-
 .break-word {
   word-break: break-all;
 }

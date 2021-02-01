@@ -1,7 +1,7 @@
 <template>
   <div class="nav-container row">
     <div class="col triangle-div px-0 d-none d-lg-block ">
-      <div class="triangle-div2"></div>
+      <div class="triangle-div-overlap"></div>
     </div>
     <div class="col px-0">
       <b-navbar toggleable="lg" class="purple-bg">
@@ -9,8 +9,8 @@
         <b-collapse id="nav-collapse" is-nav>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <b-nav-item to="/plans">Plans</b-nav-item>
-            <b-nav-item to="">Events</b-nav-item>
+            <b-nav-item to="">Plans</b-nav-item>
+            <b-nav-item to="/events">Events</b-nav-item>
             <b-nav-item to="">EAP</b-nav-item>
             <b-nav-item to="">Wellbeing&nbsp;benefits</b-nav-item>
             <b-nav-item to="">My&nbsp;organisation</b-nav-item>
@@ -44,7 +44,7 @@ export default {
   border-width: 76px 76px 0 0;
   border-color: #e4e4e7 transparent transparent transparent;
 }
-.triangle-div2 {
+.triangle-div-overlap {
   position: relative;
   top: -76px;
   left: 0px;
@@ -65,6 +65,9 @@ li {
 li > a.nav-link {
   white-space: nowrap;
   color: white !important;
+}
+li > a.nav-link:hover {
+  color: whitesmoke !important;
 }
 
 </style>
