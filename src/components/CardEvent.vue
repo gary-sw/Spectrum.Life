@@ -1,6 +1,6 @@
 <template>
   <div class="event-card purple-bg">
-    <div class="row justify-content-center px-5 py-3">
+    <div class="row align-items-center justify-content-center px-5 py-3">
       <div class="col event-card-title">{{ title }}</div>
       <div class="col-auto text-center">
         <div class="event-card-number">{{ date }}</div>
@@ -22,14 +22,17 @@
 .event-card-title {
   font-size: 24px;
   text-align: left;
+  overflow: hidden;
+  white-space:pre-wrap
 }
 
 .event-card-number{
-    font-size: 40px;
+    font-size: 50px;
+    line-height: 50px;
 }
 
 .event-card-month{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 
@@ -50,8 +53,7 @@
 export default {
   name: "CardEvent",
   props: {
-    eventId: Number,
-    date: Number,
+    date: String,
     month: String,
     title: String,
   },

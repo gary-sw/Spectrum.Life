@@ -1,23 +1,26 @@
 <template>
-  <div>
+  <div class="py-3">
     <b-card
-      img-src="https://picsum.photos/600/300/?image=25"
-      img-alt="Image"
-      img-top
       tag="article"
-      style="max-width: 24rem"
       class="mb-2 shadow"
     >
+    <img src="../assets/paper.png" class="card-img card-img-top img-fluid" />
+    <div class="py-3">
     <p class="card-guide-text py-3 mx-auto">Going at your own pace</p>
-    <a class="card-guide-link py-5">Download PDF</a>
+    <a class="card-guide-link">Download PDF</a>
+    </div>
     </b-card>
   </div>
 </template>
 
 <style>
+div.card-body{
+    padding: 0;
+}
+
 .card-guide-text{
     font-size: 1.8rem;
-    max-width: 60%;
+    max-width: 70%;
     font-weight: light;
 }
 
@@ -25,5 +28,6 @@
     color: #543d6b;
     font-weight: bold;
     font-size: 1.6rem;
+    padding-bottom: 1rem;
 }
 </style>

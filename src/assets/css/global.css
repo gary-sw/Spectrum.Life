@@ -22,10 +22,12 @@
     color: #999;
 }
 
-.wrapper{
+.wrapper {
     max-width: 90%;
 }
 
-.wrapper{
-    
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 100%;
+    }
 }
